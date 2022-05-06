@@ -1,8 +1,6 @@
 import pymysql
  
-conn = pymysql.connect(host='localhost', user='root', password='(비밀번호)',
-                       db='mysql', charset='utf8')
- 
+conn = pymysql.connect(host='localhost', user='root', password='(비밀번호)', db='mysql', charset='utf8')
 curs = conn.cursor(pymysql.cursors.DictCursor)
  
 sql = "SELECT User, Host FROM user"
